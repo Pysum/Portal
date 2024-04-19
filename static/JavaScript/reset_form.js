@@ -1,0 +1,3 @@
+function resetForm() {
+    location.reload();
+  }

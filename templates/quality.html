@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quality Pannel</title>
+  <link rel="stylesheet" type="text/css" href="/static/quality.css">
+  <!-- Your CSS and other imports -->
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, {{name}}!</h1>
+    <h2>Quality Panel</h2>
+    <div class="line"></div>
+  </div>
+
+
+  <div class="links">
+    <a href="{{ url_for('quality_feedback_form', name=name) }}" target="_blank">Evalute New Feedback</a>
+    
+    <div class="search-box">
+      <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Feedback ID">
+        <button type="submit">Modify Feedback</button>
+    <a href="/login.html"class="links logout-link">Logout</a>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Report</title>
+  <meta name="feedback-report" content="feedback-report">
+  <link rel="stylesheet" type="text/css" href="/static/css/feedback-report.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container1">
+    <h1>Hello {{ name }}</h1>
+    <div class="line"></div>
+  </div>
+  <div class="container2">
+    <div class="dropdown-container">
+      <div class="year-dropdown" data-control="checkbox-dropdown">
+        <label class="year-dropdown-label">Select Year</label>
+        <div class="year-dropdown-list">
+          <a href="#" data-toggle="check-all" class="dropdown-option">
+            Select All  
+          </a>
+          <label class="year-dropdown-option">
+            <input type="checkbox" name="year-checkbox" value="2023" />
+            2023
+          </label>
+          <label class="year-dropdown-option">
+              <input type="checkbox" name="year-checkbox" value="2024" />
+              2024
+          </label>
+          <label class="year-dropdown-option">
+              <input type="checkbox" name="year-checkbox" value="2025" />
+              2025
+          </label>
+        
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <div class="month-dropdown" data-control="checkbox-dropdown">
+        <label class="month-dropdown-label">Select Month</label>
+        <div class="month-dropdown-list">
+          <a href="#" data-toggle="check-all" class="dropdown-option">
+            Select All  
+          </a>
+          <label class="month-dropdown-option">
+            <input id="January-checkbox" type="checkbox" name="dropdown-group" value="January" />
+            January
+          </label>
+          <label class="month-dropdown-option">
+            <input id="February-checkbox"type="checkbox" name="dropdown-group" value="Febuary" />
+            Febuary
+          </label>
+          <label class="month-dropdown-option">
+            <input id="March-checkbox" type="checkbox" name="dropdown-group" value="March" />
+            March
+          </label>
+          <label class="month-dropdown-option">
+            <input id="April-checkbox" type="checkbox" name="dropdown-group" value="April" />
+            April
+          </label>
+          <label class="month-dropdown-option">
+            <input id="May-checkbox" type="checkbox" name="dropdown-group" value="May" />
+            May
+          </label>
+          <label class="month-dropdown-option">
+            <input id="June-checkbox" type="checkbox" name="dropdown-group" value="June" />
+            June
+          </label>
+          <label class="month-dropdown-option">
+            <input id="July-checkbox" type="checkbox" name="dropdown-group" value="July" />
+            July
+          </label>
+          <label class="month-dropdown-option">
+            <input id="August-checkbox" type="checkbox" name="dropdown-group" value="August" />
+            August
+          </label>
+          <label class="month-dropdown-option">
+            <input id="September-checkbox" type="checkbox" name="dropdown-group" value="September" />
+            September
+          </label>
+          <label class="month-dropdown-option">
+            <input id="October-checkbox" type="checkbox" name="dropdown-group" value="October" />
+            October
+          </label>
+          <label class="month-dropdown-option">
+            <input id="November-checkbox" type="checkbox" name="dropdown-group" value="November" />
+            November
+          </label>
+          <label class="month-dropdown-option">
+            <input id="December-checkbox" type="checkbox" name="dropdown-group" value="December" />
+            December
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-container">
+        <label id="aor-dropdown-label"></label>
+        <div id="aor-dropdown" class="aor-dropdown"></div>
+    </div>
+    <div class="dropdown-container">  
+      <label id="team-leader-dropdown-label"></label>
+      <div id="team-leader-dropdown" class="team-leader-dropdown"></div>
+    </div> 
+    <div class="dropdown-container">   
+      <label id="employee-dropdown-label"></label>
+      <div id="employee-dropdown" class="employee-dropdown"></div>
+    </div>  
+
+    <button id="get-feedback" onclick="getSelectedEmployees()">Enter</button>
+
+  </div>
+  <div id="feedbackTableContainer">
+    <table id="feedbackTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Manager</th>
+                <th>Feedback ID</th>
+                <th>Incident Number</th>
+                <th>Feedback Type</th>
+                <th>Sub-Category</th>
+                <th>Feedback</th>
+                <th>Acknowledged</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+  </div>
+  <button id="export-button">Export Data</button>
+
+  <!-- <script src="/static/JavaScript/feedback_report.js"></script> -->
+  <script src="/static/JavaScript/export_feedbackReport.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Select2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="/static/JavaScript/feedback_report_user_data_dropdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Leader Dashboard</title>
+  <meta name="teamleader-page" content="teamleader-dashboard">
+  <link rel="stylesheet" type="text/css" href="/static/css/teamlead.css">
+  <!-- Your CSS and other imports -->
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, {{name}}!</h1>
+    <h2>Leader Panel</h2>
+    <div class="line"></div>
+  </div>
+
+
+  <div class="links">
+    <a href="{{ url_for('feedback_form', name=name) }}" target="_blank" id="sendFeedback-link">Send Feedback</a>
+    <a href="#" id="reports-link">Reports</a>
+    <a href="#" id="performance-link">Performance</a>
+    <a href="/index.html" id="logout">Logout</a>
+  </div>
+  <div class="report-links"style="display: none;">
+    <a href="{{ url_for('feedback_report', name=name) }}" target="_blank">Feedback-Report</a>
+    <a href="#">Quality-Report</a>
+    <a href="#">Performance-Report</a>  
+  </div>
+  <div class="performance-link" style="display: none;">
+    <a href="{{ url_for('create_scorecard', name=name) }}" target="_blank">Create Scorecard</a>
+    <a href="#">View/Edit Scorecard</a>
+      
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#reports-link').click(function(event) {
+        event.preventDefault();
+        $('.report-links').toggle();
+        $('.performance-link').hide(); // Hide performance links when reports are clicked
+        event.stopPropagation(); 
+      });
+  
+      $('#performance-link').click(function(event) {
+        event.preventDefault();
+        $('.performance-link').toggle();
+        $('.report-links').hide(); // Hide report links when performance is clicked
+        event.stopPropagation(); 
+      });
+  
+      $(document).click(function(event) {
+        $('.report-links, .performance-link').hide();
+      });
+  
+      $('.report-links, .performance-link').click(function(event) {
+        event.stopPropagation(); 
+      });
+    });
+  </script>
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <meta name="feedback-form" content="feedback-form">
+  <link rel="stylesheet" href="/static/css/feedback_form.css">
+</head>
+<body>
+  <div class="container1">
+    <h1>Hello {{ name }}</h1>
+    <div class="line"></div>
+  </div>
+
+
+
+  <nav class="feedback-labels">
+    <label for="feedback-type" class="feedback-label">Feedback Type:</label>
+    <select id="feedback-type" name="feedback-type" class="feedback-select">
+      <option value="select">--Select--</option>
+      <option value="Coaching">Coaching</option>
+      <option value="Appreciation">Appreciation</option>
+    </select>
+    <label for="sub-category" class="feedback-label">Sub-Category:</label>
+    <select id="sub-category" name="sub-category" class="feedback-select">
+      <option value="select">--Select--</option>
+      <option value="Technical Knowledge">Technical Knowledge</option>
+      <option value="Incident Management">Incident Management</option>
+      <option value="Behavioral">Behavioral</option>
+    </select>
+    <label for="aor" class="feedback-label">AOR:</label>
+    <select id="aor" name="aor" class="feedback-select"></select>
+    <label for="team-leader" class="feedback-label">Team Leader:</label>
+    <select id="team-leader" name="team-leader" class="feedback-select"></select>
+    <label for="agents" class="feedback-label">Employee Name:</label>
+    <select id="agents" name="agents" class="feedback-select"></select>
+  </nav>
+  
+      
+  <div class="line"></div>
+  <div class="container2">
+      <div class="feedback-id">
+        <p>Feedback ID: <span id="ticket_id">{{ ticket_id }}</span></p> 
+        <div class="incident-number">
+          <label for="incident-number">Incident Number:</label>
+          <input type="text" id="incident-number" name="incident-number">
+        </div>
+      </div>
+      <div class="feedback-date">
+        <p>Date: <span id="date">{{ date }}</span></p>
+        <div class="chat-id">
+          <label for="chat-id">Conversation ID:</label>
+          <input type="text" id="chat-id" name="chat-id">
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="feedback-text">
+          <label for="feedback-text" style= "display: none;">Feedback:</label>
+          <textarea id="feedback-text" name="mytext" rows="4" cols="50"></textarea>
+        </div>
+      </div> 
+      <div class="button">
+        <button id="save-feedback" onclick="saveFeedback()" role="button">Submit</button>
+      </div>
+  </div>
+  <script src="/static/JavaScript/user_data_dropdown.js"></script>
+  <script src="/static/JavaScript/save_feedback_form.js"></script>
+  <!-- <script src="/static/reset_form.js"></script> -->
+  
+  
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quality Feedback Form</title>
+  <link rel="stylesheet" type="text/css" href="/static/quality_feedback_form.css">
+  <script src="/static/user_data_dropdown.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  
+</head>
+<body>
+  <div class="container1">
+    <h1>Hello {{ name }}</h1>
+    <div class="line"></div>
+  </div>
+
+  <div class="feedback-labels">
+    <label for="feedback-type" class="feedback-label">Feedback Type:</label>
+    <select id="feedback-type" name="feedback-type" class="feedback-select">
+      <option value="select">--Select--</option>
+      <option value="Coaching">Coaching</option>
+      <option value="Appreciation">Appreciation</option>
+    </select>
+    <label for="aor" class="feedback-label">AOR:</label>
+    <select id="aor" name="aor" class="feedback-select"></select>
+    <label for="team-leader" class="feedback-label">Team Leader:</label>
+    <select id="team-leader" name="team-leader" class="feedback-select"></select>
+    <label for="agents" class="feedback-label">Employee Name:</label>
+    <select id="agents" name="agents" class="feedback-select"></select>
+  </div>
+      
+  <div class="line"></div>
+  <div class="container2">
+    <div class="table-container">
+        <table>
+        <tr>
+            <th>Feedback ID:</th>
+            <td><span id="ticket_id">{{ ticket_id }}</span></td>
+            <th>Incident Number:</th>
+            <td><input type="text" id="incident-number" name="incident-number"></td>
+        </tr>
+        <tr>
+            <th>Date:</th>
+            <td><span id="date">{{ date }}</span></td>
+            <th>Conversation ID:</th>
+            <td><input type="text" id="chat-id" name="chat-id"></td>
+        </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>Details</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Incident Management Guidelines</td>
+                <td>Was an Incident created?
+                    For existing tickets, was TTO process followed?
+                </td>
+                <td>
+                    <input type="radio" id="parameter1_yes_1" name="parameter1_1" value="Yes">
+                    <label for="parameter1_yes_1">Yes</label>
+                    <input type="radio" id="parameter1_no_1" name="parameter1_1" value="No">
+                    <label for="parameter1_no_1">No</label>
+                    <input type="radio" id="parameter1_na_1" name="parameter1_1" value="NA">
+                    <label for="parameter1_na_1">NA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Work Notes</td>
+                <td>Work Notes updated precisely? The notes should be documented properly to give a gist of what happened on that Incident chat?</td>
+                <td>
+                    <input type="radio" id="parameter2_yes_2" name="parameter2_2" value="Yes">
+                    <label for="parameter2_yes_2">Yes</label>
+                    <input type="radio" id="parameter2_no_2" name="parameter2_2" value="No">
+                    <label for="parameter2_no_2">No</label>
+                    <input type="radio" id="parameter2_na_2" name="parameter2_2" value="NA">
+                    <label for="parameter2_na_2">NA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Resolution Code</td>
+                <td>Has the Analyst selected the correct RESOLUTION CODE basis the resolution provided</td>
+                <td>
+                    <input type="radio" id="parameter4_yes_4" name="parameter4_4" value="Yes">
+                    <label for="parameter4_yes_4">Yes</label>
+                    <input type="radio" id="parameter4_no_4" name="parameter4_4" value="No">
+                    <label for="parameter4_no_4">No</label>
+                    <input type="radio" id="parameter4_na_4" name="parameter4_4" value="NA">
+                    <label for="parameter4_na_4">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Close Notes</td>
+                <td>Has the Analyst updated the correct CLOSED NOTES</td>
+                <td>
+                    <input type="radio" id="parameter5_yes_5" name="parameter5_5" value="Yes">
+                    <label for="parameter5_yes_5">Yes</label>
+                    <input type="radio" id="parameter5_no_5" name="parameter5_5" value="No">
+                    <label for="parameter5_no_5">No</label>
+                    <input type="radio" id="parameter5_na_5" name="parameter5_5" value="NA">
+                    <label for="parameter5_na_5">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Conversation ID added</td>
+                <td>Is the conversation ID updated in the ticket</td>
+                <td>
+                    <input type="radio" id="parameter6_yes_6" name="parameter6_6" value="Yes">
+                    <label for="parameter6_yes_6">Yes</label>
+                    <input type="radio" id="parameter6_no_6" name="parameter6_6" value="No">
+                    <label for="parameter6_no_6">No</label>
+                    <input type="radio" id="parameter6_na_6" name="parameter6_6" value="NA">
+                    <label for="parameter6_na_6">NA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Description Template</td>
+                <td>Has the issue correctly captured in the description field template</td>
+                <td>
+                    <input type="radio" id="parameter7_yes_7" name="parameter7_7" value="Yes">
+                    <label for="parameter7_yes_7">Yes</label>
+                    <input type="radio" id="parameter7_no_7" name="parameter7_7" value="No">
+                    <label for="parameter7_no_7">No</label>
+                    <input type="radio" id="parameter7_na_7" name="parameter7_7" value="NA">
+                    <label for="parameter7_na_7">NA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>UFA - Knowledge Management</td>
+                <td>UFA Followed (Use/Edit/Create) ?
+                    Relevant KB attached? If KB not available has a request for appropriate KB creation made?
+                </td>
+                <td>
+                    <input type="radio" id="parameter8_yes_8" name="parameter8_8" value="Yes">
+                    <label for="parameter8_yes_8">Yes</label>
+                    <input type="radio" id="parameter8_no_8" name="parameter8_8" value="No">
+                    <label for="parameter8_no_8">No</label>
+                    <input type="radio" id="parameter8_na_8" name="parameter8_8" value="NA">
+                    <label for="parameter8_na_8">NA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Escalation Process</td>
+                <td>Was the Incident escalated to the correct group?</td>
+                <td>
+                    <input type="radio" id="parameter9_yes_9" name="parameter9_9" value="Yes">
+                    <label for="parameter9_yes_9">Yes</label>
+                    <input type="radio" id="parameter9_no_9" name="parameter9_9" value="No">
+                    <label for="parameter9_no_9">No</label>
+                    <input type="radio" id="parameter9_na_9" name="parameter9_9" value="NA">
+                    <label for="parameter9_na_9">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>TCG</td>
+                <td>Ticket Content Guide updated? In case of TCG template missing, 
+                    has the Analyst updated mandate information in Work Notes for L2?
+                </td>
+                <td>
+                    <input type="radio" id="parameter10_yes_10" name="parameter10_10" value="Yes">
+                    <label for="parameter10_yes_10">Yes</label>
+                    <input type="radio" id="parameter10_no_10" name="parameter10_10" value="No">
+                    <label for="parameter10_no_10">No</label>
+                    <input type="radio" id="parameter10_na_10" name="parameter10_10" value="NA">
+                    <label for="parameter10_na_10">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Probing</td>
+                <td>Did the Analyst probe enough to identify the issue?</td>
+                <td>
+                    <input type="radio" id="parameter11_yes_11" name="parameter11_11" value="Yes">
+                    <label for="parameter11_yes_11">Yes</label>
+                    <input type="radio" id="parameter11_no_11" name="parameter11_11" value="No">
+                    <label for="parameter11_no_11">No</label>
+                    <input type="radio" id="parameter11_na_11" name="parameter11_11" value="NA">
+                    <label for="parameter11_na_11">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>User been informed</td>
+                <td>Did the Analyst keep the user informed on what troubleshooting is being performed to resolve the issue?
+                    Summarize the issue & resolution
+                </td>
+                <td>
+                    <input type="radio" id="parameter12_yes_12" name="parameter12_12" value="Yes">
+                    <label for="parameter12_yes_12">Yes</label>
+                    <input type="radio" id="parameter12_no_12" name="parameter12_12" value="No">
+                    <label for="parameter12_no_12">No</label>
+                    <input type="radio" id="parameter12_na_12" name="parameter12_12" value="NA">
+                    <label for="parameter12_na_12">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Forward Resolve/Summarize</td>
+                <td>Did the Analyst used the Forward Resolve approach to avoid repeat contact 
+                    if the issue reoccurs?
+                </td>
+                <td>
+                    <input type="radio" id="parameter13_yes_13" name="parameter13_13" value="Yes">
+                    <label for="parameter13_yes_13">Yes</label>
+                    <input type="radio" id="parameter13_no_13" name="parameter13_13" value="No">
+                    <label for="parameter13_no_13">No</label>
+                    <input type="radio" id="parameter13_na_13" name="parameter13_13" value="NA">
+                    <label for="parameter13_na_13">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Transfer</td>
+                <td>Was the chat transferred to the correct skill and within the working hours?
+                </td>
+                <td>
+                    <input type="radio" id="parameter14_yes_14" name="parameter14_14" value="Yes">
+                    <label for="parameter14_yes_14">Yes</label>
+                    <input type="radio" id="parameter14_no_14" name="parameter14_14" value="No">
+                    <label for="parameter14_no_14">No</label>
+                    <input type="radio" id="parameter14_na_14" name="parameter14_14" value="NA">
+                    <label for="parameter14_na_14">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>LE Private Message</td>
+                <td>Did the Analyst utilized Private Message option in LE while transferring the chat?</td>
+                <td>
+                    <input type="radio" id="parameter15_yes_15" name="parameter15_15" value="Yes">
+                    <label for="parameter15_yes_15">Yes</label>
+                    <input type="radio" id="parameter15_no_15" name="parameter15_15" value="No">
+                    <label for="parameter15_no_15">No</label>
+                    <input type="radio" id="parameter15_na_15" name="parameter15_15" value="NA">
+                    <label for="parameter15_na_15">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Remote Access</td>
+                <td>Did Analyst followed the correct process/permission for taking remote of computer?</td>
+                <td>
+                    <input type="radio" id="parameter16_yes_16" name="parameter16_16" value="Yes">
+                    <label for="parameter16_yes_16">Yes</label>
+                    <input type="radio" id="parameter16_no_16" name="parameter16_16" value="No">
+                    <label for="parameter16_no_16">No</label>
+                    <input type="radio" id="parameter16_na_16" name="parameter16_16" value="NA">
+                    <label for="parameter16_na_16">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Conversation in LE</td>
+                <td>Did the Analyst continue the conversation in LE instead of BT wherever an opportunity was there?</td>
+                <td>
+                    <input type="radio" id="parameter17_yes_17" name="parameter17_17" value="Yes">
+                    <label for="parameter17_yes_17">Yes</label>
+                    <input type="radio" id="parameter17_no_17" name="parameter17_17" value="No">
+                    <label for="parameter17_no_17">No</label>
+                    <input type="radio" id="parameter17_na_17" name="parameter17_17" value="NA">
+                    <label for="parameter17_na_17">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Reboot/Reconnect</td>
+                <td>Did the Analyst followed the correct Reboot/Reconnect process?</td>
+                <td>
+                    <input type="radio" id="parameter18_yes_18" name="parameter18_18" value="Yes">
+                    <label for="parameter18_yes_18">Yes</label>
+                    <input type="radio" id="parameter18_no_18" name="parameter18_18" value="No">
+                    <label for="parameter18_no_18">No</label>
+                    <input type="radio" id="parameter18_na_18" name="parameter18_18" value="NA">
+                    <label for="parameter18_na_18">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Previous Conversation</td>
+                <td>Did the Analyst went through the previous conversations wherever required?</td>
+                <td>
+                    <input type="radio" id="parameter19_yes_19" name="parameter19_19" value="Yes">
+                    <label for="parameter19_yes_19">Yes</label>
+                    <input type="radio" id="parameter19_no_19" name="parameter19_19" value="No">
+                    <label for="parameter19_no_19">No</label>
+                    <input type="radio" id="parameter19_na_19" name="parameter19_19" value="NA">
+                    <label for="parameter19_na_19">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Further Assistance?</td>
+                <td>Did the Analyst asked for Further Assistance post the reported issue is resolved?</td>
+                <td>
+                    <input type="radio" id="parameter20_yes_20" name="parameter20_20" value="Yes">
+                    <label for="parameter20_yes_20">Yes</label>
+                    <input type="radio" id="parameter20_no_20" name="parameter20_20" value="No">
+                    <label for="parameter20_no_20">No</label>
+                    <input type="radio" id="parameter20_na_20" name="parameter20_20" value="NA">
+                    <label for="parameter20_na_20">NA</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Chat Closure</td>
+                <td>Did the Analyst closed the chat wherever applicable and ensure to be available for next chat?</td>
+                <td>
+                    <input type="radio" id="parameter21_yes_21" name="parameter21_21" value="Yes">
+                    <label for="parameter21_yes_21">Yes</label>
+                    <input type="radio" id="parameter21_no_21" name="parameter21_21" value="No">
+                    <label for="parameter21_no_21">No</label>
+                    <input type="radio" id="parameter21_na_21" name="parameter21_21" value="NA">
+                    <label for="parameter21_na_21">NA</label>
+
+                </td>
+            </tr>
+           
+        </table>
+    </div>
+    <div class="evalute">
+        <button id="calc">Evaluate</button>
+        <div class="scorelabel">
+            <label id="scorelabel"></label>
+        </div>
+    </div>
+    <div class="button">
+        <button id="save-feedback" onclick="saveFeedback()">Submit</button>
+    </div>
+
+  </div>
+ 
+
+
+  
+  
+  
+      <!--  -->
+  
+    
+      
+
+  
+ 
+ 
+   
+      
+      
+  
+
+
+ 
+  
+  
+  <script src="/static/evalute.js"></script>
+  <script src="/static/save_feedback_form.js"></script>
+  <!-- <script src="/static/reset_form.js"></script> -->
+  
+  
+</body>
+</html>

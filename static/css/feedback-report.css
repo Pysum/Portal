@@ -1,0 +1,379 @@
+body {
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  margin: 0;
+  padding: 0;
+}
+    
+.container2 {
+  display: flex;
+  gap: 2px;
+ 
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.dropdown-container {
+  flex-basis: calc(20% - 10px); /* Adjust width and gap as needed */
+  width: auto;
+}
+
+h1{
+  text-align: center;
+  color:#A99CF4;
+}
+
+.line {
+  height: 1px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+
+/* year dropdpwn */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #3b67e8;
+}
+
+body {
+  margin: 40px;
+}
+
+.year-dropdown {
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  width: 150px;
+
+.year-dropdown-list {
+  padding: 12px;
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 2px;
+  right: 2px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+  transform-origin: 50% 0;
+  transform: scale(1, 0);
+  transition: transform .15s ease-in-out .15s;
+  max-height: 66vh;
+  overflow-y: scroll;
+}
+  
+.year-dropdown-option {
+  display: block;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+}
+  
+.year-dropdown-label {
+  display: block;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  line-height: 1;
+  cursor: pointer;
+  
+  &:before {
+    content: '▼';
+    float: right;
+  }
+}
+  
+&.on {
+  .year-dropdown-list {
+    transform: scale(1, 1);
+    transition-delay: 0s;
+    
+  .year-dropdown-option {
+    opacity: 1;
+    transition-delay: .2s;
+  }
+}
+    
+  .year-dropdown-label:before {
+    content: '▲';
+  }
+}
+  
+[type="checkbox"] {
+  position: relative;
+  top: -1px;
+  margin-right: 4px;
+}
+}
+
+
+/* month dropdown css */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #3b67e8;
+}
+
+body {
+  margin: 40px;
+}
+
+.month-dropdown {
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  width: 150px;
+  
+  
+
+.month-dropdown-list {
+  padding: 12px;
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 2px;
+  right: 2px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+  transform-origin: 50% 0;
+  transform: scale(1, 0);
+  transition: transform .15s ease-in-out .15s;
+  max-height: 66vh;
+  overflow-y: scroll;
+}
+  
+.month-dropdown-option {
+  display: block;
+  padding: 5px 10px;
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+}
+  
+.month-dropdown-label {
+  display: block;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  line-height: 1;
+  cursor: pointer;
+  
+  &:before {
+    content: '▼';
+    float: right;
+  }
+}
+  
+&.on {
+  .month-dropdown-list {
+    transform: scale(1, 1);
+    transition-delay: 0s;
+    
+    .month-dropdown-option {
+      opacity: 1;
+      transition-delay: .2s;
+    }
+  }
+    
+  .month-dropdown-label:before {
+    content: '▲';
+  }
+}
+  
+[type="checkbox"] {
+  position: relative;
+  top: -1px;
+  margin-right: 4px;
+}
+}
+
+
+
+
+.select2-container--default .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: text;
+    margin-top: -10px;
+}
+
+.select2-results .select2-result-label {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.select2-selection__choice {
+  background-color: #007bff;
+  color: #090909;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.select2-selection__choice__remove {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.select2-selection__choice input {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Styles for individual dropdowns */
+
+#aor-dropdown-label,
+#team-leader-dropdown-label,
+#employee-dropdown-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; 
+}
+
+.aor-dropdown,
+.team-leader-dropdown,
+.employee-dropdown {
+  width: 100%; 
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+
+#aor-select,
+#team-leader-select,
+#employee-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+
+#feedbackTableContainer {
+    display: none;
+    margin-top: 50px;
+    overflow: auto; 
+    max-height: 400px; 
+}
+
+#feedbackTable {
+    width: 70%;
+    
+    margin-left: 10%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackTable th, #feedbackTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#feedbackTable th {
+    background-color: #f2f2f2;
+}
+
+#feedbackTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+#feedbackTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#feedbackTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+#export-button {
+    display: none;
+    margin-left: 70%;
+    padding: 10px 20px; 
+    background-color: #837ff5; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-top: 20px;
+}
+
+#export-button:hover {
+  background-color: #45a049; 
+}
+
+
+.acknowledged {
+    color: red;
+}
+.unacknowledged {
+    color: blue;
+} 
+
+
+
+#get-feedback{
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 35px;
+}
+
+#get-feedback:active,
+#get-feedback:focus {
+  outline: none;
+}
+
+#get-feedback:hover {
+  background-position: -20px -20px;
+}
+
+#get-feedback:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+

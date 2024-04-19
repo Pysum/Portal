@@ -1,0 +1,78 @@
+body {
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  margin: 0;
+  padding: 0;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: #11009E; */
+  }
+  
+  .heading-container h1 {
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  
+  .heading-container h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ffffff;
+
+  }
+
+  
+
+.line {
+    height: 1px;
+    background-color: #000;
+    margin: 0 0;
+    }
+
+.details-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.details-table td {
+  padding: 8px;
+  height: 50px; /* Adjust the height value as needed */
+  vertical-align: top
+  /* border: 1px solid #ccc; */
+}
+
+.details-table label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.details-table td[colspan="4"] {
+  text-align: center;
+  
+}
+
+#feedback {
+  font-weight: normal; /* Reset font weight */
+  color: #ffffff; 
+  font-size: 18px;
+  padding: 10px; /* Add padding for better visibility */
+  display: block; /* Make the label a block element to take full width */
+  margin-top: 5px; /* Add margin for spacing */
+}
+
+.already-acknowledged-label {
+  font-weight: bold;
+  color: #ff0000; 
+  text-align: center;
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+    

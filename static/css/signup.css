@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #99DBF5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .disabled-label {
+    color: grey;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]
+  select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  #email {
+    width: 100%;
+    padding: 5px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  #signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #signup-link a {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  #signup-link a:hover {
+    color: #0066cc;
+  }
+  
+  #error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+    color: red;
+  }
+
+
+
+  
+
+
+
+.signup-form {
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  height: 50px;
+  background-color: #4457eb;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  
+  vertical-align: middle; /* Add this line */
+}
+
+.home-image {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  vertical-align: middle; /* Add this line */
+}
+
+
+  
+  
+
+.btn-image {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  width: 100px; 
+  height: 50px; 
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+
+  
+  

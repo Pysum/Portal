@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Dashboard</title>
+  <meta name="agent-page" content="agent-dashboard">
+  <link rel="stylesheet"  href="/static/css/agent.css">
+
+
+</head>
+<body>
+  <div class="head-container">
+    <h1 id="user-name">{{ name }} Dashboard!</h1>
+  </div>
+    <div class="line"></div>
+
+    <div class="links">
+      <a href="#" class="view-options">My Feedback</a>
+      <a href="#" class="quality-link">My Quality</a>
+      <a href="#" class="performance-link">My Performance</a>
+      <a href="/index.html" class="logout-link">Logout</a>
+    </div>
+    
+  <div class="container">
+    <div class="display-links">
+      <a href="#" class="all-feedback-link">View All feedbacks</a>
+      <a href="#" class="unacknowledge-feedback-link">UnAcknowledged feedbacks</a>
+    </div>
+    <div class="display_value">
+      <a id="feedback-id" href="display_unacfeedback.html"></a>
+      <a id="feedback-id" href="display_acfeedback.html"></a>
+      
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/static/JavaScript/view_all_feedback.js"></script>
+  <script src="/static/JavaScript/all_unacknowledged_feedback.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/static/JavaScript/agentpage_toogle.js"></script>
+
+
+</body>
+</html>

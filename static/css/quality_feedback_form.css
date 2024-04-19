@@ -1,0 +1,181 @@
+body {
+
+    background-image: url("/static/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+  
+    /* Reset margin and padding */
+    margin: 0;
+    padding: 0;
+}
+    
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+.line {
+    height: 1px;
+    background-color: #000;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.feedback {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+}
+
+
+
+
+.feedback-label {
+    margin-left: 100px;
+    color: #fff;
+    
+}
+
+#aor{
+    width: 100px;
+}
+
+#team-leader{
+    width: 100px;
+}
+
+#agents {
+    width: 100px;
+}
+
+
+
+.container2 {
+    display: none;
+    margin: 50px auto; /* Adjust the top and bottom margin to center the container vertically */
+    padding: 10px;
+    width: 80%; 
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(50px); /* Move the container 50px to the right */
+    border-radius: 10px;
+}
+
+/* Styles for the table container */
+.table-container {
+    margin: 20px;
+    max-height: 200px; 
+    overflow-x: auto;
+    overflow-y: auto;
+    
+  }
+  
+  /* Styles for the table */
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Styles for the table header (Parameter, Details, Score) */
+  .table-container th {
+    padding: 10px;
+    text-align: center;
+    /* background-color: #f2f2f2; */
+    border: 1px solid #ccc;
+  }
+  
+  /* Styles for the table data (Feedback ID, Incident Number, Date, Conversation ID) */
+  .table-container td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Optional: Styles for specific elements (e.g., ticket ID, date, chat ID) */
+  .table-container #ticket_id,
+  .table-container #date,
+  .table-container #chat-id {
+    font-weight: bold;
+  }
+  
+  /* Optional: Styles for the input elements (Incident Number and Conversation ID) */
+  .table-container input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+/* Styling for the textarea */
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+/* CSS code for the "Evaluate" button */
+.evalute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+  }
+  
+  .evalute button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 600px;
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .evalute button:hover {
+    background-color: #0056b3;
+  }
+
+  #calc {
+    margin-right: 10px;
+  }
+
+  .scorelabel {
+    display: flex;
+    align-items: center;
+  }
+  
+
+.button {
+    display: flex;
+    
+    margin-left: 50px;
+    margin-top: 20px ;
+}
+
+#save-feedback{
+    margin-left: 40%;
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 16px;
+
+    
+}
+
+#save-feedback:hover {
+    background-color: #10e396;
+}
+  
+ 

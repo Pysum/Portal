@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divison Team leader Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="/static/teamlead.css">
+  <!-- Your CSS and other imports -->
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, {{name}}!</h1>
+    <h2>Leader Panel</h2>
+    <div class="line"></div>
+  </div>
+
+
+  <div class="links">
+    <a href="{{ url_for('feedback_form', name=name) }}" target="_blank">Send Feedback</a>
+    <a href="#">Reports</a>
+    <a href="#">Performance</a>
+    <a href="/login.html">Logout</a>
+  </div>
+  
+</body>
+</html>

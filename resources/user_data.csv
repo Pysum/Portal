@@ -1,0 +1,126 @@
+Role,NTID,Name,Manager,Password,Email,AOR
+Agent,cfre7,Corey French,Kevin McGlinchey,test01,,AAV
+Agent,dmcf1,Darren McFaul,Samir Sayed,test01,,AAV
+Agent,jmch1,Jason McGilligan,Samir Sayed,test01,,AAV
+Agent,nyeh,Nancy Wu,Kevin McGlinchey,test01,,AAV
+Agent,smuod,Shannon Munroe,Samir Sayed,test01,,AAV
+Agent,yrajh,Yogesh Rajesh Pillay,Kevin McGlinchey,test01,,AAV
+Agent,mahm7,Mushtaque Ahmed Asif Kazi,Kevin McGlinchey,test01,,AAV
+Agent,tbres,Toni Breslin,Samir Sayed,test01,,AAV
+Agent,jdoho,John Doherty,Kevin McGlinchey,test01,,AAV
+Agent,ajadw,Amol Jadhav,Kevin McGlinchey,test01,,AAV
+Agent,mmclw,Martin McKee,Samir Sayed,test01,,AAV
+Agent,npase,Nirali Saigal,Kevin McGlinchey,test01,,AAV
+Agent,dmcpa,Darragh McParland,Samir Sayed,test01,,AAV
+Agent,sjaga,Suhas Jagadale,Samir Sayed,test01,,AAV
+Agent,agaop,Arun Dighe ,Samir Sayed,test01,,AAV
+Agent,dryau,Dion Barnes,Samir Sayed,test01,,AAV
+Agent,alaik,Asif Laik Ahmed Khan,Kevin McGlinchey,test01,,AAV
+Agent,skur5,Sumit Dasgupta ,Samir Sayed,test01,,AAV
+Agent,sbrqm,Sean Browne,Kevin McGlinchey,test01,,AAV
+Agent,abucv,Amy Buchanan,Billy Bird,test01,,Agency
+Agent,cneas,Colin Neale,Billy Bird,test01,,Agency
+Agent,khaup,Kevin Harkin,Billy Bird,test01,,Agency
+Agent,swavl,Stephen Ward,Billy Bird,test01,,Agency
+Agent,SCHQC,Seema Chouhan ,Kevichosa Movi,test01,,Agency
+Agent,rvijc,Ravikumar Kukutallu,Kevichosa Movi,test01,,Agency
+Agent,abo4r,Alastair Boles,Billy Bird,test01,,Agency
+Agent,rdevl,Roisin Devine,Billy Bird,test01,,Agency
+Agent,sraxz,Saif Shaikh,Kevichosa Movi,test01,,Agency
+Agent,RSURR,Rajesh Kundgar,Kevichosa Movi,test01,,Agency
+Agent,JIBRA,Jazib Khan,Kevichosa Movi,test01,,Agency
+Agent,RRALI,Rakhi Rajan R,Kevichosa Movi,test01,,Agency
+Agent,RGUNR,Ratnesh Gunraj Yadav,Kevichosa Movi,test01,,Agency
+Agent,AYASJ,Ayesha Shaikh,Kevichosa Movi,test01,,Agency
+Agent,AAMON,Ajay Tungatkar,Kevichosa Movi,test01,,Agency
+Agent,VSHBX,Vickey Thorat,Kevichosa Movi,test01,,Agency
+Agent,AAMBB,Abhishek Saswade,Kevichosa Movi,test01,,Agency
+Agent,SSHHH,Sandeep Pradhan,Kevichosa Movi,test01,,Agency
+Agent,aca25,Ann-Marie Carlin,Rosita McCrossan,test01,,Agency
+Agent,cbrru,Carrie - Anne Brown,Chloe Keenan,test01,,Agency
+Agent,cbre3,Claire Brennan,Chloe Keenan,test01,,Agency
+Agent,achju,Antonio Chisari,Chloe Keenan,test01,,Agency
+Agent,cmc32,Charlene McFeeters,Barry Rouse,test01,,Agency
+Agent,cclbp,Callum Clarke,Chloe Keenan,test01,,Agency
+Agent,vtris,Vivek Tripathi,Shoaib Khan,test01,,Agency
+Agent,mmul1,Azhar Ali Mulla,Hariharan R,test01,,Agency
+Agent,spamg,Supriya Pal,Barry Rouse,test01,,Agency
+Agent,RDATV,Suman Datta Reddy,Hariharan R,test01,,Agency
+Agent,SKAQ0,Shantanu Kamble,Shoaib Khan,test01,,Agency
+Agent,vlaki,Vineet Lakhanpal,Shoaib Khan,test01,,Agency
+Agent,ZSAYY,Zoheb Sayyed,Shoaib Khan,test01,,Agency
+Agent,lmcdm,Liam McCosker,Chloe Keenan,test01,,Agency
+Agent,jgaon,Joseph Gamble,Chloe Keenan,test01,,Agency
+Agent,gdonp,Gavin Donnelly,Barry Rouse,test01,,Agency
+Agent,aasih,Akshay Anchan,Barry Rouse,test01,,Agency
+Agent,sjoys,Stany Joy Srambickal,Hariharan R,test01,,Agency
+Agent,GKHAD,Gaurav Khade,Shoaib Khan,test01,,Agency
+Agent,nchb4,Neha Jawale,Barry Rouse,test01,,Agency
+Agent,kkisl,Kedar Todkar,Shoaib Khan,test01,,Agency
+Agent,rbeof,Reuben Benny,Yogesh Pillay,test01,,Agency
+Agent,rrpax,Rohit Dasari,Hariharan R,test01,,Agency
+Agent,srkum,Santhosh R Kumar,Hariharan R,test01,,Agency
+Agent,spa1m,Saurav Patel,Hariharan R,test01,,Agency
+Agent,suttb,Siddharth Uttam Waikar,Yogesh Pillay,test01,,Agency
+Agent,sshhh,Sameer Shaikh,Yogesh Pillay,test01,,Agency
+Agent,vuko1,Vikas Kumar,Yogesh Pillay,test01,,Agency
+Agent,agoq3,Arshia Kale,Yogesh Pillay,test01,,Agency
+Agent,nfriz,Nicole Frize,Billy Bird,test01,,Agency
+Agent,dhyne,David Hyndman,Billy Bird,test01,,Agency
+Agent,ssite,Satnam Singh,Yogesh Pillay,test01,,Agency
+Agent,asukj,Akash Shinde,Hariharan R,test01,,Agency
+Agent,zkhur,Zeeshan Khursheed,Yogesh Pillay,test01,,Agency
+Agent,gshb7,Gopesh Sharma,Aidan Quinn,test01,,Agency
+Agent,slex0,Shamika Lewis Reid ,Aidan Quinn,test01,,Agency
+Agent,csmyx,Christopher Smyth,Chloe Keenan,test01,,Agency
+Agent,jpaxv,Jason Patton,Billy Bird,test01,,Agency
+Agent,amcf1,Aaron McDaid,Billy Bird,test01,,Agency
+Agent,jcroq,John Cronin,Chloe Keenan,test01,,Agency
+Agent,MBISE,Mounika Bisai,Hariharan R,test01,,Agency
+Agent,MMOIK,Mohammad Muzammil,Hariharan R,test01,,Agency
+Agent,FSHBA,Faizal Pasha Shah,Hariharan R,test01,,Agency
+Agent,IBASJ,Imran Basha,Edwin Raj,test01,,Agency
+Agent,RSHDR,Ruth Shamsunder Raut,Hariharan R,test01,,Agency
+Agent,MFAIY,Mohammad Faisal Khaliq,Edwin Raj,test01,,Agency
+Agent,DRAJ5,Deepali Rajendra Gaikwad,Hariharan R,test01,,Agency
+Agent,SVIKB,Swapnil Vijay Kale,Hariharan R,test01,,Agency
+Agent,RANAW,Raj Jadhav,Yogesh Pillay,test01,,Agency
+Agent,SSAZZ,Sangeet Kumar,Yogesh Pillay,test01,,Agency
+Agent,ANAJR,Afaan Ansari,Shoaib Khan,test01,,Agency
+Agent,SNILF,Sayli Zade,Yogesh Pillay,test01,,Agency
+Agent,SDEEV,Sachin Deepak Shewani,Hariharan R,test01,,Agency
+Agent,BPRAO,Bharat Prajapati,Yogesh Pillay,test01,,Agency
+Agent,MAAAF,Monesh A,Edwin Raj,test01,,Agency
+Agent,VDINF,Dinesh Vemuru,Edwin Raj,test01,,Agency
+Agent,SFAZK,Syed Fazil Mehdi,Edwin Raj,test01,,Agency
+Agent,SAHNN,Suhail Ahmed,Edwin Raj,test01,,Agency
+Agent,KVARU,Varsha Kondepudi,Edwin Raj,test01,,Agency
+Agent,FAAAA,Florance,Edwin Raj,test01,,Agency
+Agent,SCHQE,Sourav Choudhury,Edwin Raj,test01,,Agency
+Agent,JLUSL,John Lusk,Chloe Keenan,test01,,Agency
+Agent,HMANJ,Harshvardhan Manik Tapkir,Yogesh Pillay,test01,,Agency
+Agent,MAMJA,Mudassir Shaikh,Shoaib Khan,test01,,Agency
+Agent,SHELC,Sneha Helale,Yogesh Pillay,test01,,Agency
+Agent,TKUMQ,Tarun Kumar,Yogesh Pillay,test01,,Agency
+Agent,BJOSX,Barkha Joshi,Shoaib Khan,test01,,Agency
+Agent,sinay,Inayatullah Shaikh,Shoaib Khan,test01,,Agency
+Agent,scoyo,Sophia Coyle,Rosita McCrossan,test01,,Agency
+Agent,tbauv,Thomas Barr,Rosita McCrossan,test01,,Agency
+Agent,bmcfb,Bernard McFadden,Rosita McCrossan,test01,,Agency
+Team Leader,SSAYM,Samir Sayed,Daniel McGrath,test01,,AAV
+Team Leader,aqui6,Aidan Quinn,Shauna Friel,test01,,Agency
+Team Leader,brout,Barry Rouse,Allen Magee,test01,,Agency
+Team Leader,bbire,Billy Bird,Shauna Friel,test01,,Agency
+Team Leader,ckeeo,Chloe Keenan,Venkatesh BL,test01,,Agency
+Team Leader,erajd,Edwin Raj,Venkatesh BL,test01,,Agency
+Team Leader,hraad,Hariharan R,Venkatesh BL,test01,,Agency
+Team Leader,kmovi,Kevichosa Movi,Chaitali Ganguly,test01,,Agency
+Team Leader,kmchm,Kevin McGlinchey,Daniel McGrath,test01,,AAV
+Team Leader,rmcc4,Rosita McCrossan,Daniel McGrath,test01,,Agency
+Team Leader,skhv9,Shoaib Khan,Chaitali Ganguly,test01,,Agency
+Team Leader,YPILL,Yogesh Pillay,Chaitali Ganguly,test01,,Agency
+Division Leader,CGANG,Chaitali Ganguly,Sabrina Lynch,test01,,Agency
+Division Leader,VBLAB,Venkatesh BL,Sabrina Lynch,test01,,Agency
+Division Leader,dmcgx,Daniel McGrath,Sabrina Lynch,test01,,Agency
+Division Leader,sfr4j,Shauna Friel,Sabrina Lynch,test01,,Agency
+Division Leader,ama4m,Allen Magee,Sabrina Lynch,test01,,Agency

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="/static/signup.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="/static/logo.png" alt="Logo">
+  </div>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signup-form" method="post" action="/submit_signup">
+      <div class="form-group">
+        <label for="role">Role</label>
+        <select id="role" name="Role">
+          <option value="">Select Role</option>
+          <option value="Agent">Agent</option>
+          <option value="Team Leader">Team Leader</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ntid">NTID</label>
+        <input type="text" id="ntid" name="NTID" required>
+      </div>
+      <div class="form-group">
+        <label for="name">First and last name</label>
+        <input type="text" id="name" name="First and last name" required>
+      </div>
+      <div class="form-group">
+        <label for="Manager">Manager</label>
+        <select id="Manager" name="Manager">
+          <option value="">Select Leader</option>
+          <option value="Samir Sayed">Samir Sayed</option>
+          <option value="Mujahid Shaikh">Mujahid Shaikh</option>
+          <option value="Shoaib Khan">Shoaib Khan</option>
+          <option value="Mushfiq Momin">Mushfiq Momin</option>
+          <option value="Yogesh Pillay">Yogesh Pillay</option>
+          <option value="Abish Kalshekar">Abish Kalshekar</option>
+          <option value="Sangeeta Nimonkar">Sangeeta Nimonkar</option>
+          <option value="Uzer Khan">Uzer Khan</option>
+          <option value="Md Afzal Sayeed">Md Afzal Sayeed</option>
+          <option value="Shahin Rudra">Shahin Rudra</option>
+          <option value="Chaitali Ganguly">Chaitali Ganguly</option>
+          <option value="Faisal Shaikh">Faisal Shaikh</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="Email" required>
+      </div>
+      <input type="submit" value="Create Account" class="signup-form">
+      <a href="/login.html" id="home-link">
+        <img src="/static/home.png" alt="Home" class="home-image">
+      </a>
+    </form>
+  </div>
+  
+  <!--<script src="/static/signup.js"></script>-->
+  <script src="/static/home_button.js"></script>
+</body>
+</html>

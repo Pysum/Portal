@@ -1,0 +1,169 @@
+body {
+background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+margin: 0;
+padding: 0;
+}
+
+.container1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+box-sizing: border-box;
+}
+
+
+
+h1{
+text-align: center;
+color: #fff;
+}
+
+.line {
+height: 1px;
+background-color: #000;
+margin: 20px 0;
+width: 100%;
+}
+
+
+
+#aor{
+    width: 100px;
+}
+
+#team-leader{
+    width: 100px;
+}
+
+#agents {
+    width: 100px;
+}
+
+.button {
+    display: flex;
+    
+    margin-left: 50px;
+    margin-top: 20px ;
+}
+
+#save-feedback{
+    margin-left: 40%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.scorecard-table {
+    max-width: 80%;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 10px;
+    overflow-x: auto; 
+    max-height: 60vh; 
+    overflow-y: hidden; 
+}
+
+#excel-table {
+    border-collapse: collapse;
+    width: auto; 
+    max-width: 100%; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow-x: auto; 
+}
+
+
+#excel-table th,
+#excel-table td {
+    padding: 10px;
+    
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #707070;
+    
+}
+
+#excel-table th {
+    background-color: #394ff8;
+    color: white;
+   
+}
+
+#excel-table input[type="number"] {
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#excel-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+
+#excel-table .allstate-table th {
+    background-color: #131313; 
+    color: #fff; 
+    font-weight: bold; 
+    width: 100%;
+}
+
+#excel-table .score-card th {
+    background-color: #5f5d5d; 
+    color: #fff; 
+    font-weight: bold; 
+    width: 100%;
+}
+
+#excel-table th:nth-child(8),
+#excel-table th:nth-child(9),
+#excel-table th:nth-child(10) {
+    background-color: rgb(244, 125, 21);
+}
+
+#excel-table tbody td[colspan="9"] {
+    background-color: rgb(76, 203, 245);
+    letter-spacing: 4px;
+    font-weight: bold;
+    
+    
+}
+
+#excel-table tbody td[colspan="9"].final-score {
+    background-color: rgb(10, 239, 220);
+}
+
+@media (max-width: 480px) {
+    #excel-table {
+        margin: 5px;
+    }
+
+    #excel-table th,
+    #excel-table td {
+        font-size: 10px;
+    }
+
+    #excel-table input[type="number"] {
+        width: 30%;
+    }
+}
+
+
+  
+  
+
+

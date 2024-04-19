@@ -1,0 +1,128 @@
+body {
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 10px 0;
+  color: #A99CF4;
+  letter-spacing: 3px;
+}
+
+.line {
+  height: 1px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+.links {
+  display: flex;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  height: 30px;
+  font-size: 16px;
+  color: #A99CF4;
+
+  
+
+}
+
+#sendFeedback-link{
+  margin-left: 10%;
+  cursor: pointer;
+  
+}
+#reports-link {
+  margin-left: 15%;
+  cursor: pointer;
+
+}
+
+#performance-link{
+  margin-left: 15%;
+  cursor: pointer;
+}
+
+#logout {
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.links a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.links a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+.report-links {
+  margin-top: 5%;
+  display: flex; /* Make the links display horizontally */
+  list-style: none; /* Remove the list-style (bullets) */
+
+}
+
+.report-links a {
+  margin-left: 15% ;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 3px;
+  background: -webkit-linear-gradient(#eee, #725af9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Add this line */
+}
+
+.performance-link{
+  margin-top: 5%;
+  display: flex; /* Make the links display horizontally */
+  list-style: none; /* Remove the list-style (bullets) */
+}
+
+.performance-link a {
+  margin-left: 20% ;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 3px;
+  background: -webkit-linear-gradient(#eee, #725af9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Add this line */
+  
+}
+
